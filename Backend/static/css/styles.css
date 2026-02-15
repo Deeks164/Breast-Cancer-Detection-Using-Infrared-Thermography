@@ -1,0 +1,85 @@
+body {
+  background: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+  min-height: 100vh;
+  font-family: 'Segoe UI', 'Arial', sans-serif;
+}
+
+.card {
+  border-radius: 18px;
+  border: none;
+}
+
+footer {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  background: #007bff;
+  letter-spacing: 1px;
+}
+/* Responsive Upload Card */
+.card {
+  border-radius: 1rem;
+  transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Progress Bar Customization */
+#progressBarContainer {
+  display: none;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  font-weight: bold;
+  font-size: 0.9rem;
+  transition: width 0.4s ease;
+}
+
+/* Image Preview Styling */
+#imagePreviewContainer {
+  display: none;
+  animation-duration: 0.8s;
+}
+
+#imagePreview {
+  max-height: 300px;
+  margin-top: 10px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Result Alert Animations */
+#result.animate__animated {
+  animation-duration: 0.8s;
+}
+
+/* Responsive adjustments */
+@media (max-width: 576px) {
+  .card h2 {
+    font-size: 1.5rem;
+  }
+
+  #imagePreview {
+    max-height: 200px;
+  }
+
+  .btn {
+    font-size: 0.9rem;
+  }
+}
+
+/* Footer Stickiness for Short Pages */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+}
